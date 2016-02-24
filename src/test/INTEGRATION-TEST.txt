@@ -1,4 +1,4 @@
-Product: Integration tests for WSO2 ESB Pivotaltracker connector
+﻿Product: Integration tests for WSO2 ESB Pivotaltracker connector
 
 Pre-requisites:
 
@@ -32,9 +32,9 @@ Steps to follow in setting integration test.
  4. Follow the below mentioned steps for adding valid certificate to access Pivotaltracker API over https
 
 	i) Extract the certificate from browser by navigating to apiUrl[Step 1->(i)] and place the certificate file in following location.
-	   "{PIVOTALTRACKER_CONNECTOR_HOME}/pivotaltracker-connector/pivotaltracker-connector-1.0.0/org.wso2.carbon.connector/src/test/resources/keystores/products/"
+	   "{PIVOTALTRACKER_CONNECTOR_HOME}/src/test/resources/keystores/products/"
 	  
-	ii) Navigate to "{PIVOTALTRACKER_CONNECTOR_HOME}/pivotaltracker-connector/pivotaltracker-connector-1.0.0/org.wso2.carbon.connector/src/test/resources/keystores/products/" using command prompt and execute keytool -importcert -file CERT_FILE_NAME -keystore wso2carbon.jks -alias "CERT_NAME" in command line to import pivotaltracker certificate in to keystore. Give "wso2carbon" as password.
+	ii) Navigate to "{PIVOTALTRACKER_CONNECTOR_HOME}/src/test/resources/keystores/products/" using command prompt and execute keytool -importcert -file CERT_FILE_NAME -keystore wso2carbon.jks -alias "CERT_NAME" in command line to import pivotaltracker certificate in to keystore. Give "wso2carbon" as password.
 		NOTE : CERT_FILE_NAME is the file name which was extracted from pivotaltracker, change it accordingly. (e.g. -.pivotaltracker.com)
 			   CERT_NAME is name of the certificate. (e.g. pivotaltracker)
 	   
@@ -49,7 +49,7 @@ Steps to follow in setting integration test.
  8. Make sure that Pivotaltracker is specified as a module in ESB_Connector_Parent pom.
  	<module>PivotalTracker\pivotaltracker-connector\pivotaltracker-connector-1.0.0\org.wso2.carbon.connector</module>	
  
- 9. Update the 'pivotaltracker.properties' file at the location "{PIVOTALTRACKER_CONNECTOR_HOME}/pivotaltracker-connector/pivotaltracker-connector-1.0.0/org.wso2.carbon.connector/src/test/resources/artifacts/ESB/connector/config/" as below.
+ 9. Update the 'pivotaltracker.properties' file at the location "{PIVOTALTRACKER_CONNECTOR_HOME}/src/test/resources/artifacts/ESB/connector/config/" as below.
    	 i) 	apiUrl						-		Use the api url, step 1->(i)
 	 ii) 	userName					-		Use the userName, step 1->(iii)
 	 iii) 	password					-		Use the password, step 1->(ii)
