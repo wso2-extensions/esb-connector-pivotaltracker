@@ -1,4 +1,4 @@
-﻿Product: Integration tests for WSO2 ESB Pivotaltracker connector
+Product: Integration tests for WSO2 ESB Pivotaltracker connector
 
 Pre-requisites:
 
@@ -38,7 +38,7 @@ Steps to follow in setting integration test.
 		NOTE : CERT_FILE_NAME is the file name which was extracted from pivotaltracker, change it accordingly. (e.g. -.pivotaltracker.com)
 			   CERT_NAME is name of the certificate. (e.g. pivotaltracker)
 	   
-	iii) Go to ESB 4.9.0-BETA-SNAPSHOT folder and place the downloaded certificate in "<ESB_HOME>/repository/resources/security/"
+	iii) Go to ESB 4.9.0 folder and place the downloaded certificate in "<ESB_HOME>/repository/resources/security/"
 
 	iv) Navigate to "<ESB_HOME>/repository/resources/security/" using command prompt and execute keytool -importcert -file CERT_FILE_NAME -keystore client-truststore.jks -alias "CERT_NAME" in command line to import pivotaltracker certificate in to keystore. Give "wso2carbon" as password.
 		NOTE : CERT_FILE_NAME is the file name which was extracted from pivotaltracker, change it accordingly. (e.g. -.pivotaltracker.com)
