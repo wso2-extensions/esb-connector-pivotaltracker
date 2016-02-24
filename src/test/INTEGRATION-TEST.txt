@@ -74,5 +74,5 @@ Steps to follow in setting integration test.
 	*	createdBefore should be a future date. 
 	*	createdAfter should be a past date.
 	
- 10. Navigate to "{PIVOTALTRACKER_CONNECTOR_HOME}/" and run the following command.
+ 9. Navigate to "{PIVOTALTRACKER_CONNECTOR_HOME}/" and run the following command.
       $ mvn clean install
