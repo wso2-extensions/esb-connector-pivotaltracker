@@ -47,7 +47,7 @@ public class PivotaltrackerConnectorIntegrationTest extends ConnectorIntegration
     @BeforeClass(alwaysRun = true)
     public void setEnvironment() throws Exception {
     
-        init("pivotaltracker-connector-1.0.0");
+        init("pivotaltracker-connector-1.0.1-SNAPSHOT");
         
         esbRequestHeadersMap = new HashMap<String, String>();
         
