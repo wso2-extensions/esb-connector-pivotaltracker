@@ -127,7 +127,7 @@
             urlQuery += 'filter=' + filter + '&';
          } 
          if (urlQuery != '') {
-            mc.setProperty("uri.var.urlQuery", '?' + urlQuery.substring(0, urlQuery.length-1));
+            mc.setProperty("uri.var.urlQuery", '?' + urlQuery.toString().substring(0, urlQuery.toString().lastIndexOf("&")));
          }         
         ]]>
         </script>
